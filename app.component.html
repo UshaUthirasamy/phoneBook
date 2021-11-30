@@ -1,0 +1,15 @@
+<h2>Phone Book Converter</h2>
+<div class="container">
+    <div>
+        <input type="text" #countryCode> : Enter Your country code
+    </div><br>
+    <div>
+        <input type="text" #mobileNumber> : Enter Your mobile number
+    </div><br>
+    <div>
+    <button (click)= "get(countryCode.value,mobileNumber.value)">Submit</button>
+    </div><br><br>
+    <div class="convertedAnswer">
+        {{result}}
+    </div>
+</div>
